@@ -74,3 +74,7 @@ Abre la carpeta `bruno` como colección en Bruno, selecciona el entorno `local` 
 ## Estado actual
 
 La aplicación y las solicitudes están en desarrollo. En el código actual, el montaje de las rutas de notas en `src/app.js` no incluye la `/` inicial (`api/v1/notas`); además, el endpoint de preferencia usa `nunll` en lugar de `null`. Por ello, algunos endpoints documentados pueden no funcionar hasta corregir esos detalles.
+
+---
+### Creador: _Henrik Anderson Oloroso García_
+### Ultima modificacion: 23/10/2026
