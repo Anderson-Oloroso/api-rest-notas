@@ -1,0 +1,11 @@
+meta {
+  name: Obtener nota por ID
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/v1/notas/{{notaId}}
+  body: none
+  auth: none
+}
