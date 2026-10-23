@@ -1,0 +1,25 @@
+meta {
+  name: Crear nota
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/v1/notas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Repasar Express",
+    "contenido": "Revisar rutas y middleware.",
+    "categoria": "calse"
+  }
+}
+
+script:post-response {
+  if (res.status === 201 && res.body && res.body.data && res.body.data._id) {
+    bru.setEnvVar("notaId", res.body.data._id);
+  }
+}
