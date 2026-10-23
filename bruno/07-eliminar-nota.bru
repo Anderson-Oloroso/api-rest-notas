@@ -1,0 +1,11 @@
+meta {
+  name: Eliminar nota
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/notas/{{notaId}}
+  body: none
+  auth: none
+}

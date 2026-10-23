@@ -1,0 +1,17 @@
+meta {
+  name: Actualizar nota
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/api/v1/notas/{{notaId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Repasar Express y MongoDB"
+  }
+}
